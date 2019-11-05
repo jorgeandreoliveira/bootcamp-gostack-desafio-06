@@ -4,10 +4,21 @@ import PropTypes from 'prop-types';
 import AsyncStorage from '@react-native-community/async-storage';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import api from '../../services/api';
-import { Container, Form, Input, SubmitButton, List, User, Avatar, Name, Bio,
-  ProfileButton, ProfileButtonText } from './styles';
+import {
+  Container,
+  Form,
+  Input,
+  SubmitButton,
+  List,
+  User,
+  Avatar,
+  Name,
+  Bio,
+  ProfileButton,
+  ProfileButtonText
+} from './styles';
 
-//import '../../config/ReactotronConfig';
+import '../../config/ReactotronConfig';
 
 export default class Main extends Component {
 
@@ -69,8 +80,6 @@ export default class Main extends Component {
 
   handleNavigate = user => {
     const { navigation } = this.props;
-
-    //console.log('Entrei');
 
     navigation.navigate('User', { user });
   };

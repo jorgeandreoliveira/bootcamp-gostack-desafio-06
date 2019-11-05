@@ -21,14 +21,12 @@ export default class User extends Component {
     title: navigation.getParam('user').name,
   });
 
-  // eslint-disable-next-line react/static-property-placement
   static propTypes = {
     navigation: PropTypes.shape({
       getParam: PropTypes.func,
     }).isRequired,
   };
 
-  // eslint-disable-next-line react/state-in-constructor
   state = {
     stars: [],
   };
